@@ -27,10 +27,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="/common.css" />
 
         <style>
@@ -75,10 +72,11 @@
         <!-- Navigation -->
         <nav class="navbar" id="navbar">
             <div class="nav-container">
-                <img src="/assets/new/new-logo.svg" alt="cheating daddy" class="logo">
+                <img src="/assets/new/new-logo.svg" alt="cheating daddy" class="logo" />
                 <div class="nav-links">
                     <a href="/">Home</a>
                     <a href="/download">Download</a>
+                    <a href="/help">Help</a>
                     <a href="https://github.com/sohzm/cheating-daddy" target="_blank">Source</a>
                 </div>
             </div>
@@ -89,7 +87,10 @@
             <div class="container">
                 <div class="page-header">
                     <h1 class="page-title">macOS Audio Guide</h1>
-                    <p class="page-subtitle">Follow these steps to enable audio recording permissions for Cheating Daddy on macOS.<br>This allows the app to capture system audio for processing.</p>
+                    <p class="page-subtitle">
+                        Follow these steps to enable audio recording permissions for Cheating Daddy on macOS.<br />This allows the app to capture
+                        system audio for processing.
+                    </p>
                 </div>
 
                 <div class="content-section">
@@ -100,9 +101,14 @@
                                 <h3 class="step-title">Open System Settings</h3>
                             </div>
                             <div class="card-content">
-                                First, open your Mac's System Settings and navigate to the "Privacy and Security" section as shown in the screenshot below.
+                                First, open your Mac's System Settings and navigate to the "Privacy and Security" section as shown in the screenshot
+                                below.
                                 <div class="image-container">
-                                    <img src="/assets/help/macos-audio/privacy-and-sec.png" alt="Privacy and Security Settings Screenshot" class="step-image" />
+                                    <img
+                                        src="/assets/help/macos-audio/privacy-and-sec.png"
+                                        alt="Privacy and Security Settings Screenshot"
+                                        class="step-image"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -115,7 +121,11 @@
                             <div class="card-content">
                                 In the Privacy and Security settings, find and click on "Screen and System Audio Recording" option.
                                 <div class="image-container">
-                                    <img src="/assets/help/macos-audio/screenrec.png" alt="Screen and System Audio Recording Screenshot" class="step-image" />
+                                    <img
+                                        src="/assets/help/macos-audio/screenrec.png"
+                                        alt="Screen and System Audio Recording Screenshot"
+                                        class="step-image"
+                                    />
                                 </div>
                             </div>
                         </div>
@@ -152,7 +162,8 @@
                                 <h3 class="step-title">Enable Permissions</h3>
                             </div>
                             <div class="card-content">
-                                Make sure the toggle switch next to Cheating Daddy is <span class="highlight">enabled</span>. Your settings should look like the screenshot below when configured correctly.
+                                Make sure the toggle switch next to Cheating Daddy is <span class="highlight">enabled</span>. Your settings should
+                                look like the screenshot below when configured correctly.
                                 <div class="image-container">
                                     <img src="/assets/help/macos-audio/final-look.png" alt="Final Configuration Screenshot" class="step-image" />
                                 </div>
@@ -167,25 +178,25 @@
         <footer class="footer">
             <div class="footer-container">
                 <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="github-star">
-                    <img src="/assets/social/github.svg" alt="GitHub">
+                    <img src="/assets/social/github.svg" alt="GitHub" />
                     <span>Star us on GitHub</span>
                 </a>
-                
+
                 <div class="social-links">
                     <a href="https://discord.gg/GCBdubnXfJ" target="_blank">
-                        <img src="/assets/social/discord.svg" alt="Discord">
+                        <img src="/assets/social/discord.svg" alt="Discord" />
                     </a>
                     <a href="https://instagram.com/cheating_daddy" target="_blank">
-                        <img src="/assets/social/insta.svg" alt="Instagram">
+                        <img src="/assets/social/insta.svg" alt="Instagram" />
                     </a>
                     <a href="https://x.com/cheating_daddy" target="_blank">
-                        <img src="/assets/social/twitter.svg" alt="Twitter">
+                        <img src="/assets/social/twitter.svg" alt="Twitter" />
                     </a>
                     <a href="https://www.tiktok.com/@cheating_daddy" target="_blank">
-                        <img src="/assets/social/tiktok.svg" alt="TikTok">
+                        <img src="/assets/social/tiktok.svg" alt="TikTok" />
                     </a>
                 </div>
-                
+
                 <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">soham</a></p>
             </div>
         </footer>
@@ -195,7 +206,7 @@
             function handleNavbarScroll() {
                 const navbar = document.getElementById('navbar');
                 const scrolled = window.scrollY > 50;
-                
+
                 if (scrolled) {
                     navbar.classList.add('scrolled');
                 } else {
@@ -204,7 +215,7 @@
             }
 
             // Initialize
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
                 window.addEventListener('scroll', handleNavbarScroll);
             });
         </script>
