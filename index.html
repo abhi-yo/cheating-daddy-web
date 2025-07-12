@@ -554,6 +554,18 @@
                 font-weight: 500;
             }
 
+            /* Detection container responsive padding */
+            .detection-container {
+                padding: 40px 0;
+                text-align: center;
+            }
+
+            @media (max-width: 768px) {
+                .detection-container {
+                    padding: 40px;
+                }
+            }
+
             /* Responsive Design */
             @media (max-width: 1024px) {
                 .hero {
@@ -728,9 +740,13 @@
             </div>
         </section>
 
+        <!-- Detection Image -->
+        <div class="detection-container">
+            <img src="/assets/detection.svg" alt="Detection" style="max-width: 640px; height: auto;" />
+        </div>
+
         <!-- Features Section -->
         <section class="features">
-            <h2 class="features-title">Features</h2>
             <div class="bento-grid">
                 <div class="bento-item">
                     <canvas class="bento-canvas" id="canvas1"></canvas>
