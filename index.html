@@ -28,436 +28,151 @@
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-            href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=IBM+Plex+Sans:wght@300;400;500;600;700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
-        <link rel="stylesheet" href="/style.css" />
+        <link rel="stylesheet" href="/landing.css" />
+        <script src="https://unpkg.com/lucide@latest"></script>
     </head>
     <body>
-        <!-- Navigation -->
-        <nav class="navbar" id="navbar">
-            <div class="nav-container">
-                <img src="/assets/new-logo.jpg" alt="cheating daddy" class="logo" />
-                <div class="nav-links">
-                    <a href="/help">Help</a>
-                    <!-- <a href="/tutorial">Tutorial</a> -->
-                    <a href="/download" class="download-nav-btn">Downloads</a>
-                </div>
-            </div>
-        </nav>
-
-        <!-- Hero Section -->
-        <section class="hero">
-            <div class="hero-content">
-                <div class="hero-badge">Free & Open Source</div>
-                <h1 class="hero-title">If you're gonna cheat, cheat better</h1>
-                <p class="hero-subtitle">Listens to questions, sees your screen, and feeds everything to Google Gemini for instant answers</p>
-                <div class="cta-buttons">
-                    <a href="#" class="download-btn" id="downloadBtn">
-                        <span>↓</span>
-                        <span id="downloadText">Download for Windows</span>
-                    </a>
-                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="github-btn">
-                        <span>Star us on GitHub</span>
-                    </a>
-                </div>
-                <a href="/download" class="download-link">View all downloads</a>
-            </div>
-
-            <!-- App Screenshot -->
-            <div class="app-preview">
-                <img src="/assets/app.svg" alt="Cheating Daddy App Screenshot" />
-            </div>
-        </section>
-
-        <!-- Detection Image -->
-        <div class="detection-container">
-            <img src="/assets/detection.svg" alt="Detection" style="max-width: 640px; height: auto; width: 100%" />
-        </div>
-
-        <!-- Features Section -->
-        <section class="features">
-            <div class="bento-grid">
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas1"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">👁️</span>
-                        <h3>Screen Vision</h3>
-                        <p>
-                            Captures screenshots and sends them to Google Gemini. Perfect for reading interview questions, coding problems, or any
-                            visual content.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas2"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">👂</span>
-                        <h3>Audio Capture</h3>
-                        <p>Listens to system audio and converts speech to text for AI processing.</p>
-                    </div>
-                </div>
-
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas3"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">💬</span>
-                        <h3>AI Responses</h3>
-                        <p>Generates intelligent answers automatically using Google Gemini API.</p>
-                    </div>
-                </div>
-
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas4"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">🔒</span>
-                        <h3>Stealth Mode</h3>
-                        <p>Invisible during screen sharing and recording. Stays hidden as a system overlay that screen capture software ignores.</p>
-                    </div>
-                </div>
-
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas5"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">👤</span>
-                        <h3>Multiple Profiles</h3>
-                        <p>
-                            Switch between different modes like job interview, sales call, negotiation, or study session. Each profile optimizes AI
-                            responses for specific scenarios.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas6"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">✍️</span>
-                        <h3>Customizable Prompts</h3>
-                        <p>
-                            Provide context like your resume, company info, or personal details to get more personalized and relevant AI responses
-                            tailored to your situation.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="bento-item">
-                    <canvas class="bento-canvas" id="canvas7"></canvas>
-                    <div class="content">
-                        <span class="feature-icon">⌨️</span>
-                        <h3>Keyboard Shortcuts</h3>
-                        <p>
-                            Control everything with customizable hotkeys. Trigger captures, switch modes, or generate responses without touching the
-                            mouse.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Trust & Privacy Section -->
-        <section class="trust">
-            <div class="trust-container">
-                <h2 class="trust-title">Project status & privacy</h2>
-                <p class="trust-subtitle">Accurate details about this site today</p>
-
-                <div class="trust-grid">
-                    <div class="trust-item">
-                        <div class="trust-icon">🛡️</div>
-                        <h3>No tracking</h3>
-                        <p>No analytics, pixels, or third‑party scripts.</p>
-                    </div>
-                    <div class="trust-item">
-                        <div class="trust-icon">🖥️</div>
-                        <h3>Privacy first</h3>
-                        <p>No tracking, no cookies, no data collection.</p>
-                    </div>
-                    <div class="trust-item">
-                        <div class="trust-icon">🧩</div>
-                        <h3>Open source</h3>
-                        <p>All code is available on GitHub for review.</p>
-                    </div>
-                </div>
-
-                <div class="stats">
-                    <div class="stat">
-                        <div class="stat-value">0</div>
-                        <div class="stat-label">Trackers</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">0</div>
-                        <div class="stat-label">Cookies</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value">100%</div>
-                        <div class="stat-label">Open Source</div>
-                    </div>
-                    <div class="stat">
-                        <div class="stat-value" title="Current release version">v0.4</div>
-                        <div class="stat-label">Status</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- FAQ Section -->
-        <section class="faq">
-            <h2 class="faq-title">FAQ</h2>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    Does it work automatically?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Yes! Auto-generates responses from screen and audio. Use Ctrl+Enter for manual input.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    Is this app really free?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">100% free and open source. No cost, no catch.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    How does screen capture work?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Takes screenshots and audio, sends to Google Gemini API. Requires internet and API key.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    Is it invisible during sharing?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Yes! Doesn't show up in screen recordings or shares. Invisible overlay.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    What platforms are supported?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Windows and macOS. Linux coming soon.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    Can I customize AI responses?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Yes! Add context to personalize responses for your needs.</p>
-            </div>
-
-            <div class="faq-item">
-                <h3 class="faq-question">
-                    How do I get support?
-                    <span class="faq-icon">+</span>
-                </h3>
-                <p class="faq-answer">Join our Discord or report issues on GitHub.</p>
-            </div>
-        </section>
-
-        <!-- Final CTA Section -->
-        <section class="final-cta" id="download">
-            <div class="final-cta-container">
-                <h2 class="final-cta-title">Ready to get started?</h2>
-                <p class="final-cta-subtitle">Join thousands making smarter, faster decisions with Cheating Daddy.</p>
-                <div class="final-cta-actions">
-                    <a href="#" id="downloadBtnBottom" class="download-btn"><span>↓</span><span id="downloadTextBottom">Download</span></a>
-                    <a href="/download" class="github-btn">View all downloads</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Footer -->
-        <footer class="footer">
-            <div class="footer-container">
-                <div class="big-brand" aria-hidden="true">cheating daddy</div>
-                <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="github-star">
-                    <img src="/assets/social/github.svg" alt="GitHub" />
-                    <span>Star us on GitHub</span>
+        <header class="site-nav">
+            <div class="container nav-inner">
+                <a href="/" class="brand" aria-label="cheating daddy">
+                    <img src="/assets/new-logo.jpg" alt="cheating daddy" class="brand-logo" />
                 </a>
+                <nav class="nav-links">
+                    <a href="/help">Help</a>
+                    <a href="/download" class="button button-ghost">Downloads</a>
+                </nav>
+            </div>
+        </header>
 
-                <div class="social-links">
-                    <a href="https://discord.gg/GCBdubnXfJ" target="_blank">
-                        <img src="/assets/social/discord.svg" alt="Discord" />
-                    </a>
-                    <a href="https://instagram.com/cheating_daddy" target="_blank">
-                        <img src="/assets/social/insta.svg" alt="Instagram" />
-                    </a>
-                    <a href="https://x.com/cheating_daddy" target="_blank">
-                        <img src="/assets/social/twitter.svg" alt="Twitter" />
-                    </a>
-                    <a href="https://www.tiktok.com/@cheating_daddy" target="_blank">
-                        <img src="/assets/social/tiktok.svg" alt="TikTok" />
-                    </a>
+        <main>
+            <section class="hero">
+                <div class="hero-frame" aria-hidden="true"></div>
+                <div id="heroPrism" class="hero-prism" aria-hidden="true"></div>
+                <div class="container content hero-stack" style="position: relative; z-index: 1">
+                    <span class="eyebrow">free and open source</span>
+                    <h1>If you are gonna <span class=""></span><br /><span class="semibold">Cheat, Cheat</span> better</h1>
+                    <p class="subtext">
+                        Listens to questions, sees your screen, and feeds<br />
+                        everything to Google Gemini for instant answers.
+                    </p>
+
+                    <!-- <a href="/download" class="subtle-link">View all downloads</a> -->
+                    <img class="preview hero-preview" src="/assets/app.svg" alt="Cheating Daddy app preview" />
                 </div>
+            </section>
 
-                <p class="footer-text">Made by <a href="https://soham.sh/" target="_blank">soham</a></p>
+            <section class="strip brands">
+                <div class="container strip-inner">
+                    <div class="nd-title">Invisible to</div>
+                    <div class="brand-labels">
+                        <span class="brand-label">Google Meet</span>
+                        <span class="brand-label">Zoom</span>
+                        <span class="brand-label">Webex</span>
+                        <span class="brand-label">Slack</span>
+                        <span class="brand-label">Teams</span>
+                    </div>
+                </div>
+            </section>
+
+            <section class="features">
+                <div class="container">
+                    <div class="features-header">
+                        <h2>What it does</h2>
+                    </div>
+                    <div class="grid">
+                        <div class="card">
+                            <i data-lucide="monitor" class="icon"></i>
+                            <h3>Screen vision</h3>
+                            <p>Captures screenshots and sends them to Google Gemini.</p>
+                        </div>
+                        <div class="card">
+                            <i data-lucide="mic" class="icon"></i>
+                            <h3>Audio capture</h3>
+                            <p>Listens to system audio and converts speech to text.</p>
+                        </div>
+                        <div class="card">
+                            <i data-lucide="bot" class="icon"></i>
+                            <h3>AI responses</h3>
+                            <p>Generates intelligent answers automatically.</p>
+                        </div>
+                        <div class="card">
+                            <i data-lucide="eye-off" class="icon"></i>
+                            <h3>Stealth mode</h3>
+                            <p>Invisible during screen sharing and recording.</p>
+                        </div>
+                        <div class="card">
+                            <i data-lucide="users" class="icon"></i>
+                            <h3>Profiles</h3>
+                            <p>Switch between interview, sales, study and more.</p>
+                        </div>
+                        <div class="card">
+                            <i data-lucide="keyboard" class="icon"></i>
+                            <h3>Shortcuts</h3>
+                            <p>Control everything with customizable hotkeys.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="faq container">
+                <h2>FAQ</h2>
+                <div class="faq-item">
+                    <div class="faq-question">Does it work automatically?<span class="faq-icon">+</span></div>
+                    <p class="faq-answer">Yes. It auto-generates responses from screen and audio.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is this app really free?<span class="faq-icon">+</span></div>
+                    <p class="faq-answer">It is free and open source.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How does screen capture work?<span class="faq-icon">+</span></div>
+                    <p class="faq-answer">It captures screenshots and audio and sends them to the API.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">Is it invisible during sharing?<span class="faq-icon">+</span></div>
+                    <p class="faq-answer">It does not show up in screen recordings or shares.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What platforms are supported?<span class="faq-icon">+</span></div>
+                    <p class="faq-answer">Windows and macOS. Linux coming soon.</p>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">How do I get support?<span class="faq-icon">+</span></div>
+                    <p class="faq-answer">Join Discord or open an issue on GitHub.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="container footer-inner">
+                <div class="brand">cheating daddy</div>
+                <a href="https://github.com/sohzm/cheating-daddy" target="_blank" class="footer-star">Star us on GitHub</a>
+                <div class="social">
+                    <a href="https://github.com/sohzm/cheating-daddy" target="_blank"><img src="/assets/social/github.svg" alt="GitHub" /></a>
+                    <a href="https://discord.gg/GCBdubnXfJ" target="_blank"><img src="/assets/social/discord.svg" alt="Discord" /></a>
+                    <a href="https://instagram.com/cheating_daddy" target="_blank"><img src="/assets/social/insta.svg" alt="Instagram" /></a>
+                    <a href="https://x.com/cheating_daddy" target="_blank"><img src="/assets/social/twitter.svg" alt="Twitter" /></a>
+                    <a href="https://www.tiktok.com/@cheating_daddy" target="_blank"><img src="/assets/social/tiktok.svg" alt="TikTok" /></a>
+                </div>
+            </div>
+            <div class="container footer-meta">
+                <p class="made-by">Made by <a href="https://soham.sh/" target="_blank">soham</a></p>
             </div>
         </footer>
 
+        <script src="https://cdn.jsdelivr.net/npm/ogl@0.0.110/dist/ogl.umd.js"></script>
+        <script src="/prism.js"></script>
         <script>
-            // Canvas Animations - Subtle Apple-like
-            class CanvasAnimation {
-                constructor(canvasId, type) {
-                    this.canvas = document.getElementById(canvasId);
-                    this.ctx = this.canvas.getContext('2d');
-                    this.type = type;
-                    this.particles = [];
-                    this.animationId = null;
-
-                    this.resizeCanvas();
-                    this.init();
-                    this.animate();
-
-                    window.addEventListener('resize', () => this.resizeCanvas());
-                }
-
-                resizeCanvas() {
-                    const rect = this.canvas.getBoundingClientRect();
-                    this.canvas.width = rect.width;
-                    this.canvas.height = rect.height;
-                }
-
-                init() {
-                    this.particles = [];
-                    const particleCount = 8;
-
-                    for (let i = 0; i < particleCount; i++) {
-                        this.particles.push({
-                            x: Math.random() * this.canvas.width,
-                            y: Math.random() * this.canvas.height,
-                            vx: (Math.random() - 0.5) * 0.3,
-                            vy: (Math.random() - 0.5) * 0.3,
-                            size: Math.random() * 3 + 2,
-                            opacity: Math.random() * 0.3 + 0.1,
-                            hue: Math.random() * 60 + 200,
-                        });
-                    }
-                }
-
-                animate() {
-                    this.ctx.clearRect(0, 0, this.canvas.width, this.canvas.height);
-
-                    switch (this.type) {
-                        case 'floating':
-                            this.drawFloating();
-                            break;
-                        case 'wave':
-                            this.drawWave();
-                            break;
-                        case 'pulse':
-                            this.drawPulse();
-                            break;
-                        case 'flow':
-                            this.drawFlow();
-                            break;
-                    }
-
-                    this.animationId = requestAnimationFrame(() => this.animate());
-                }
-
-                drawFloating() {
-                    const time = Date.now() * 0.001;
-
-                    this.particles.forEach(particle => {
-                        const gradient = this.ctx.createRadialGradient(particle.x, particle.y, 0, particle.x, particle.y, particle.size * 2);
-                        gradient.addColorStop(0, `hsla(${particle.hue}, 70%, 70%, ${particle.opacity})`);
-                        gradient.addColorStop(1, `hsla(${particle.hue}, 70%, 70%, 0)`);
-
-                        this.ctx.fillStyle = gradient;
-                        this.ctx.beginPath();
-                        this.ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-                        this.ctx.fill();
-
-                        particle.x += Math.sin(time + particle.x * 0.01) * 0.2;
-                        particle.y += Math.cos(time + particle.y * 0.01) * 0.2;
-
-                        if (particle.x < 0) particle.x = this.canvas.width;
-                        if (particle.x > this.canvas.width) particle.x = 0;
-                        if (particle.y < 0) particle.y = this.canvas.height;
-                        if (particle.y > this.canvas.height) particle.y = 0;
-                    });
-                }
-
-                drawWave() {
-                    const time = Date.now() * 0.001;
-                    const gradient = this.ctx.createLinearGradient(0, 0, this.canvas.width, this.canvas.height);
-                    gradient.addColorStop(0, 'rgba(30, 58, 138, 0.1)');
-                    gradient.addColorStop(1, 'rgba(0, 0, 0, 0.1)');
-
-                    this.ctx.strokeStyle = gradient;
-                    this.ctx.lineWidth = 2;
-                    this.ctx.beginPath();
-
-                    for (let x = 0; x < this.canvas.width; x += 5) {
-                        const y = this.canvas.height / 2 + Math.sin(x * 0.01 + time) * 20;
-                        if (x === 0) {
-                            this.ctx.moveTo(x, y);
-                        } else {
-                            this.ctx.lineTo(x, y);
-                        }
-                    }
-                    this.ctx.stroke();
-                }
-
-                drawPulse() {
-                    const time = Date.now() * 0.001;
-                    const centerX = this.canvas.width / 2;
-                    const centerY = this.canvas.height / 2;
-
-                    for (let i = 0; i < 3; i++) {
-                        const radius = 20 + Math.sin(time + i * 0.5) * 15;
-                        const opacity = 0.1 - i * 0.03;
-
-                        const gradient = this.ctx.createRadialGradient(centerX, centerY, 0, centerX, centerY, radius);
-                        gradient.addColorStop(0, `rgba(30, 58, 138, ${opacity})`);
-                        gradient.addColorStop(1, 'rgba(30, 58, 138, 0)');
-
-                        this.ctx.fillStyle = gradient;
-                        this.ctx.beginPath();
-                        this.ctx.arc(centerX, centerY, radius, 0, Math.PI * 2);
-                        this.ctx.fill();
-                    }
-                }
-
-                drawFlow() {
-                    const time = Date.now() * 0.001;
-
-                    this.ctx.strokeStyle = 'rgba(30, 58, 138, 0.1)';
-                    this.ctx.lineWidth = 1;
-
-                    for (let i = 0; i < 5; i++) {
-                        this.ctx.beginPath();
-                        const startX = ((time * 30 + i * 40) % (this.canvas.width + 40)) - 40;
-                        const startY = this.canvas.height / 2 + Math.sin(time + i) * 30;
-
-                        this.ctx.moveTo(startX, startY);
-                        this.ctx.quadraticCurveTo(startX + 20, startY - 10, startX + 40, startY);
-                        this.ctx.stroke();
-                    }
-                }
-
-                destroy() {
-                    if (this.animationId) {
-                        cancelAnimationFrame(this.animationId);
-                    }
-                }
-            }
-
-            // OS Detection and Download Button
             function detectOS() {
                 const userAgent = navigator.userAgent;
                 const downloadBtn = document.getElementById('downloadBtn');
                 const downloadText = document.getElementById('downloadText');
                 const downloadBtnBottom = document.getElementById('downloadBtnBottom');
                 const downloadTextBottom = document.getElementById('downloadTextBottom');
-
+                if (!downloadBtn || !downloadText) return;
                 if (userAgent.indexOf('Mac') !== -1) {
                     downloadText.textContent = 'Download for macOS';
                     downloadBtn.href = 'https://github.com/sohzm/cheating-daddy/releases/download/v0.4/Cheating.Daddy-0.4.0-arm64.dmg';
@@ -475,55 +190,64 @@
                 }
             }
 
-            // Navbar scroll effect
-            function handleNavbarScroll() {
-                const navbar = document.getElementById('navbar');
-                const scrolled = window.scrollY > 50;
-
-                if (scrolled) {
-                    navbar.classList.add('scrolled');
-                } else {
-                    navbar.classList.remove('scrolled');
-                }
-            }
-
-            // FAQ Toggle
             function initFAQ() {
                 const faqItems = document.querySelectorAll('.faq-item');
-
                 faqItems.forEach(item => {
                     const question = item.querySelector('.faq-question');
-
+                    if (!question) return;
                     question.addEventListener('click', () => {
                         const isActive = item.classList.contains('active');
-
-                        // Close all other items
-                        faqItems.forEach(otherItem => {
-                            otherItem.classList.remove('active');
-                        });
-
-                        // Toggle current item
-                        if (!isActive) {
-                            item.classList.add('active');
-                        }
+                        faqItems.forEach(otherItem => otherItem.classList.remove('active'));
+                        if (!isActive) item.classList.add('active');
                     });
                 });
             }
 
-            // Initialize everything
+            function mountGodRays() {}
+
             document.addEventListener('DOMContentLoaded', function () {
                 detectOS();
-                window.addEventListener('scroll', handleNavbarScroll);
                 initFAQ();
-
-                // Initialize canvas animations
-                new CanvasAnimation('canvas1', 'floating');
-                new CanvasAnimation('canvas2', 'wave');
-                new CanvasAnimation('canvas3', 'pulse');
-                new CanvasAnimation('canvas4', 'flow');
-                new CanvasAnimation('canvas5', 'floating');
-                new CanvasAnimation('canvas6', 'wave');
-                new CanvasAnimation('canvas7', 'pulse');
+                mountGodRays();
+                try {
+                    var prismHost = document.getElementById('heroPrism');
+                    if (prismHost && window.mountPrism) {
+                        Object.assign(prismHost.style, { position: 'absolute', inset: '0', zIndex: -1, pointerEvents: 'none', opacity: 0.9 });
+                        window.mountPrism(prismHost, {
+                            timeScale: 0.5,
+                            height: 3.5,
+                            baseWidth: 5.5,
+                            scale: 3.6,
+                            hueShift: 0,
+                            colorFrequency: 1,
+                            noise: 0.35,
+                            glow: 1,
+                        });
+                    }
+                } catch (e) {}
+                try {
+                    var blurEl = document.getElementById('scrollBlur');
+                    var lastY = window.pageYOffset || 0;
+                    var maxBlur = 12;
+                    var onScroll = function () {
+                        var doc = document.documentElement;
+                        var y = window.pageYOffset || doc.scrollTop || 0;
+                        var goingDown = y > lastY;
+                        lastY = y;
+                        if (!blurEl) return;
+                        if (!goingDown) {
+                            blurEl.style.setProperty('--scroll-blur', '0px');
+                            return;
+                        }
+                        var maxScroll = doc.scrollHeight - doc.clientHeight || 1;
+                        var t = Math.min(1, Math.max(0, y / (maxScroll * 0.65)));
+                        var blur = Math.round(4 + 8 * t);
+                        blurEl.style.setProperty('--scroll-blur', Math.min(maxBlur, blur) + 'px');
+                    };
+                    onScroll();
+                    window.addEventListener('scroll', onScroll, { passive: true });
+                } catch (e) {}
+                if (window.lucide && window.lucide.createIcons) window.lucide.createIcons();
             });
         </script>
     </body>
